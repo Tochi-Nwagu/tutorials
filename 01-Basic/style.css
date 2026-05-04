@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #62eabc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  margin: 0 auto;
+}
+
+.container{
+  width: 50%;
+  height: auto;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: #fff;
+ 
+}
+
+ul{
+  list-style: none;
+}
+h1{
+   font-size: 48px;
+   padding-bottom: 15px;
+}
+p, li{
+  font-size: 20px;
+  padding: 10px;
+}
+
+p{
+  line-height: 1.5;
+}
