@@ -6,7 +6,7 @@ let population = 241000000;
 const isIsland = false;
 let language;
 
-console.log(country, population, isIsland, language);
+// console.log(country, population, isIsland, language);
 
 /**
  * let, const and var﻿
@@ -21,8 +21,31 @@ const continent = "Africa"
 
 //reassigning a const will show squiggly red line under the reassigned variable
 
-console.log(country, continent, population, isIsland, language);
+// console.log(country, continent, population, isIsland, language);
 
+/**
+ * Basic Operators﻿
+If your country split in half, and each half would contain half the population, then how many people would live in each half?
+
+Increase the population of your country by 1 and log the result to the console.
+
+Finland has a population of 6 million. Does your country have more people than Finland?
+
+The average population of a country is 33 million people. Does you country have less people than the average country?
+
+Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
+ */
+let nupopulation = 241 / 2
+console.log(nupopulation);
+nupopulation++;
+console.log(nupopulation)
+let popFinland = 6000000
+const higherPopulation = population > popFinland
+console.log(higherPopulation)
+const avgPopulation = 33000000
+
+const description = `${country} is in ${continent}, and its ${population} people speak ${language}.`
+console.log(description)
 /**
  * CHALLENGE #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
