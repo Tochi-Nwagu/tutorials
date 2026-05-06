@@ -1,6 +1,6 @@
 let country = 'Nigeria';
 // let continent = 'Africa';
-let population = 241000000;
+let population = 241000000
 
 
 const isIsland = false;
@@ -36,16 +36,45 @@ The average population of a country is 33 million people. Does you country have 
 Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
  */
 let nupopulation = 241 / 2
-console.log(nupopulation);
+// console.log(nupopulation);
 nupopulation++;
-console.log(nupopulation)
+// console.log(nupopulation)
 let popFinland = 6000000
 const higherPopulation = population > popFinland
-console.log(higherPopulation)
+// console.log(higherPopulation)
 const avgPopulation = 33000000
 
 const description = `${country} is in ${continent}, and its ${population} people speak ${language}.`
-console.log(description)
+// console.log(description)
+
+/**
+ * Taking Decisions: if / else Statements﻿
+If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
+
+After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
+ */
+if (population > avgPopulation) {
+  console.log(`${country}'s population is ${population - avgPopulation} above average`)
+} else {
+  console.log(`${country}'s population is ${avgPopulation - population} below average`)
+}
+
+/**
+ * Type Conversion and Coercion﻿
+Predict the result of these 5 operations without executing them:
+
+console.log('9' - '5'); // -> 4?
+console.log('19' - '13' + '17'); // -> 617?
+console.log('19' - '13' + 17); // -> 23?
+console.log('123' < 57); // -> false?
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143?
+Execute the operations to check if you were right.
+ */
+console.log('9' - '5'); // -> 4?
+console.log('19' - '13' + '17'); // -> 617?
+console.log('19' - '13' + 17); // -> 23?
+console.log('123' < 57); // -> false?
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143?
 /**
  * CHALLENGE #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
