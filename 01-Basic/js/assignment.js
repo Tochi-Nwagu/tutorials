@@ -122,7 +122,7 @@ Probably your country does not meet all the criteria. So go back and temporarily
 // }
 
 /**
- * The switch Statement﻿
+ * The switch Statement
 Use a switch statement to log the following string for the given language:
 
 chinese or mandarin: 'MOST number of native speakers!';
@@ -137,3 +137,24 @@ arabic: '5th most spoken language';
 
 for all other simply log 'Great language too :D'.
  */
+// let spokenLanguage = prompt('What language do you speak?')
+// switch (spokenLanguage) {
+//   case 'chinese':
+//   case 'mandarin':
+//     console.log('MOST number of native speakers!');
+//     break;
+//   case 'spanish':
+//     console.log('2nd place in number of native speakers');
+//     break;
+//   case 'english':
+//     console.log('3rd Place');
+//     break;
+//   case 'hindu':
+//     console.log('Number 4');
+//     break;
+//   case 'arabic':
+//     console.log('5th most spoken language');
+//     break;
+//   default:
+//     console.log('Great language too :D');
+// }

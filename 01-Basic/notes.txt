@@ -36,7 +36,7 @@
  * Operators can be classified into two types: arithmetic operators, assignment operators, comparison operators, logical operators, and bitwise operators.
  * Arithmetic operators are used to perform arithmetic operations on variables and values.
  * Assignment operators are used to assign values to variables.
- * Comparison operators are used to compare values and return a boolean value.
+ * Comparison operators are used to compare values and return a boolean value
  * Logical operators are used to perform logical operations on variables and values.
  * Bitwise operators are used to perform bitwise operations on variables and values.
  * 3. Functions
@@ -46,3 +46,5 @@
  * Functions can return a value using the return keyword.
  * 
  */
+
+ 

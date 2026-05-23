@@ -163,24 +163,24 @@
 
 //Type Conversion and Coercion
 //Type Conversion
-let birthYear = '1991';
-// console.log(birthYear + 18) //199118
-// to convert
-console.log(Number(birthYear) + 18) //2009
+// let birthYear = '1991';
+// // console.log(birthYear + 18) //199118
+// // to convert
+// console.log(Number(birthYear) + 18) //2009
 
-console.log(String(1991))
-console.log(typeof 1991)
+// console.log(String(1991))
+// console.log(typeof 1991)
 
 //Type Coercion
-const about = 'I am ' + 23 + ' years old'
-console.log(about)
-console.log(typeof about)
-console.log('23' - '10' - 3); //10
-console.log('23' / 2) //11.5
+// const about = 'I am ' + 23 + ' years old'
+// console.log(about)
+// console.log(typeof about)
+// console.log('23' - '10' - 3); //10
+// console.log('23' / 2) //11.5
 
-let n = '1' + 1; //'11'
-n = n - 1; // 10;
-console.log(n); //10 
+// let n = '1' + 1; //'11'
+// n = n - 1; // 10;
+// console.log(n); //10
 //This is called type coercion.
 /**
  * In type coersion, JavaScript tries to convert the values to the same type so that the operation can be performed.
@@ -193,23 +193,23 @@ console.log(n); //10
  * This are not initial false, they only become falsy when they are converted to a Boolean value.
  * All other values are truthy.
  * The conversion to boolean is always implicit not explicit.
- * NOTE: This happens in 2 scenarios: 
+ * NOTE: This happens in 2 scenarios:
  * 1. When using a logical operators(&&, ||, ??)
  * 2. When using conditionals like if/else statements or for/while loops.
  */
-const money = 0;
-if (money) {
-  console.log(`Don't spend it all!`)
-} else {
-  console.log(`You should get a job!`)
-}
-let height = 0;
-if (height) {
-  console.log(`YAY! height is defined`)
-} else {
-  console.log(`Height is UNDEFINED`)
-}
+// const money = 0;
+// if (money) {
+//   console.log(`Don't spend it all!`)
+// } else {
+//   console.log(`You should get a job!`)
+// }
+// let height = 0;
+// if (height) {
+//   console.log(`YAY! height is defined`)
+// } else {
+//   console.log(`Height is UNDEFINED`)
+// }
 
 //EQUALITY OPERATORS
-const age = 18;
-if (age === 18) console.log(`You just became an adult!`)
+// const age = 18;
+// if (age === 18) console.log(`You just became an adult!`)
