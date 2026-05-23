@@ -1,0 +1,106 @@
+/**
+ *
+ * CHALLENGE #1
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height) (mass in kg and height in meters).
+Your task is to write some code to help them:
+
+Store Mark's and John's mass and height in variables called massMark, heightMark, massJohn and heightJohn.
+
+Calculate both their BMIs using the formula, and store the results in two variables called BMIMark and BMIJohn.
+
+Log the value of BMIMark and BMIJohn to the console.
+
+BONUS: Create a boolean variable markHigherBMI containing information about whether Mark has a higher BMI than John. Log it to the console too
+
+TEST DATA 1: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
+
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+
+
+
+👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+
+
+IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
+ */
+// SOLUTION
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massMark2 = 95;
+// const heightMark2 = 1.88;
+
+// const massJohn = 92;
+// const heightJohn = 1.95;
+// const massJohn2 = 85;
+// const heightJohn2 = 1.76;
+
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const BMIMark2 = massMark2 / (heightMark2 * heightMark2);
+// const BMIJohn2 = massJohn2 / (heightJohn2 * heightJohn2);
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// console.log(BMIMark, BMIJohn, BMIMark2, BMIJohn2);
+// console.log(markHigherBMI);
+
+
+/**
+ * Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, telling the user who has the higher BMI. The message can be either:
+
+"Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!".
+
+2. Modify the outputs above to use template literals to include the BMI values in the outputs.
+
+Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1) is higher than Mark's (27)!".
+
+Note: Don't round the BMI values. Leave them as they are.
+
+👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
+ */
+
+// console.log("Mark" + "'s" + " BMI " + BMIMark + " is higher than John" + "'s!");
+// console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+
+/**
+ * CHALLENGE 3
+ * There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+
+Your tasks:
+
+1. Calculate the average score for each team, using the test data included below. The average score for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas should be assigned to the scoreKoalas variable.
+
+2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+
+"Dolphins win the trophy" if Dolphins win, or
+
+"Koalas win the trophy" if Koalas win, or
+
+"Both win the trophy" if their average scores are equal.
+
+
+
+TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+
+
+ */
+
+// let scoreDolphins = 96 + 108 + 89;
+// let scoreKoalas = 88 + 91 + 110
+
+// let avgDolphins = scoreDolphins / 3;
+// let avgKoalas = scoreKoalas / 3;
+
+// console.log(avgDolphins, avgKoalas)
+
+// if (avgDolphins > avgKoalas) {
+//   console.log('Dolphins win the trophy!!!');
+// } else if (avgDolphins === avgKoalas) {
+//   console.log('Both teams wins!!!');
+// } else {
+//   console.log('Koalas win the trophy!!!');
+// }
