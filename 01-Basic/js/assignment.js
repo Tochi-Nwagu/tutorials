@@ -166,3 +166,88 @@
 // After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
 //  */
 // console.log(`${country}'s population is ${population >= avgPopulation ? 'above' : 'below'} average`);
+
+/**
+ * Functions﻿
+Write a function called describeCountry which takes three parameters: country, population and capitalCity. Based on this input, the function returns a string with this format: 'Finland has 6 million people and its capital city is Helsinki'.
+
+Call this function 3 times, with input data for 3 different countries. Store the returned values in 3 different variables, and log them to the console.
+ */
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`
+}
+
+// console.log(describeCountry('Nigeria', 241, 'Abuja'));
+// console.log(describeCountry('Finland', 33, 'Helsinki'));
+// console.log(describeCountry('China', 430, 'Beijing'));
+
+const describeNigeia = describeCountry('Nigeria', 241, 'Abuja');
+const describeFinland = describeCountry('Finland', 33, 'Helsinki');
+const describeChina = describeCountry('China', 1441, 'Beijing');
+// console.log(describeNigeia);
+// console.log(describeFinland);
+// console.log(describeChina);
+
+/**
+ * Function Declarations vs. Expressions﻿
+The world population is 7900 million people. Create a function declaration called percentageOfWorld1 which receives a population value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population.
+
+To calculate the percentage, divide the given population value by 7900 and then multiply by 100.
+
+Call percentageOfWorld1 for 3 populations of countries of your choice, store the results into variables, and log them to the console.
+
+Create a function expression which does the exact same thing, called percentageOfWolrd2, and also call it with 3 country populations (can be the same populations).
+ */
+
+function percentageOfWorld1(population) {
+  return (population / 7500) * 100;
+}
+
+const percentagePopChina = percentageOfWorld1(1441);
+const percentagePopFinland = percentageOfWorld1(33);
+const percentagePopNigeria = percentageOfWorld1(241);
+// console.log(percentagePopChina);
+// console.log(percentagePopFinland);
+// console.log(percentagePopNigeria);
+
+//function expression
+const percentageOfWolrd2 = function (population) {
+  return (population / 7500) * 100;
+}
+
+const percentagePopChina2 = percentageOfWolrd2(1441);
+const percentagePopFinland2 = percentageOfWolrd2(33);
+const percentagePopNigeria2 = percentageOfWolrd2(241);
+// console.log(percentagePopChina2);
+// console.log(percentagePopFinland2);
+// console.log(percentagePopNigeria2);
+
+/**
+ * Arrow Functions﻿
+Recreate the last assignment, but this time create an arrow function called percentageOfWorld3
+ */
+
+const percentageOfWorld3 = population => population / 7500 * 100;
+const percentagePopChina3 = percentageOfWorld3(1441)
+// console.log(`The percentage of China population is ${percentagePopChina3}% of the world's population`);
+
+/**
+ * Functions Calling Other Functions﻿
+Create a function called describePopulation. Use the function type you like the most. This function takes in two arguments: country and population, and returns a strings like this: 'China has 1441 million people, which is about 18.2% of the world'.
+
+To calculate the percentage, describePopulation calls the percentageOfWorld1 you created earlier.
+
+Call describePopulation with data for 3 countries of your choice.
+ */
+
+const describePopulation = function (country, population) {
+
+  const percentage = percentageOfWorld1(population)
+
+  return `${country} has ${population} million people, which is about ${percentage}% of the world.`
+}
+
+console.log(describePopulation('China', 1441));
+console.log(describePopulation('USA', 332));
+console.log(describePopulation('Nigeria', 241));
