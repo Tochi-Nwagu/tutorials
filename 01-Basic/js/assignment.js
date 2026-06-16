@@ -248,6 +248,6 @@ const describePopulation = function (country, population) {
   return `${country} has ${population} million people, which is about ${percentage}% of the world.`
 }
 
-console.log(describePopulation('China', 1441));
-console.log(describePopulation('USA', 332));
-console.log(describePopulation('Nigeria', 241));
+// console.log(describePopulation('China', 1441));
+// console.log(describePopulation('USA', 332));
+// console.log(describePopulation('Nigeria', 241));

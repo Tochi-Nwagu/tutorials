@@ -32,12 +32,12 @@
 //FUNCTION DECLARATION VS. FUNCTION EXPRESSION
 
 //FUNCTION DECLARATION
-function calAge1(birthYear) {
-  return 2037 - birthYear;
-}
+// function calAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
 
-const age = calAge1(1991)
-// console.log(age);
+// const age = calAge1(1991)
+// // console.log(age);
 
 //FUNCTION EXPRESSION
 //This is a function without a name or may be referred anonymous functions
@@ -48,31 +48,44 @@ const age = calAge1(1991)
 // console.log(age2);
 
 //ARROW FUNCTION
-const calAge3 = birthYear => 2037 - birthYear;
-const age3 = calAge3(1991)
-// console.log(age3);
+// const calAge3 = birthYear => 2037 - birthYear;
+// const age3 = calAge3(1991)
+// // console.log(age3);
 
-
-const yearUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`;
-}
+// const yearUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years`;
+// }
 // console.log(yearUntilRetirement(1991, "Jonas"));
 // console.log(yearUntilRetirement(1981, "Bob"));
 
 //NOTE Arrow functions does not get the "this" keyword
 
 //FUNCTIONS CALLING FUNCTIONS
-const cutPieces = function (fruit) {
-  return fruit * 4;
-}
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutPieces(apples);
-  const orangePieces = cutPieces(oranges);
+// const cutPieces = function (fruit) {
+//   return fruit * 4;
+// }
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutPieces(apples);
+//   const orangePieces = cutPieces(oranges);
 
-  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+//   return juice;
+// }
 
-// console.log(fruitProcessor(2, 3)); 
+// console.log(fruitProcessor(2, 3));
+
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear
+// }
+
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+//   return retirement;
+
+//   return `${firstName} retires in ${retirement} years`
+// }
+
+// console.log(yearUntilRetirement(1991, 'Tochi'));
